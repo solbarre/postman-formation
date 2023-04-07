@@ -8,9 +8,9 @@ pipeline {
 					  sh """
 					  sudo apt update
 					  sudo apt -y install nodejs npm
-					  npm install -g newman
-					  npm install -g newman-reporter-htmlextra
-					  npm install -g newman-reporter-junitfullreport
+					  sudo npm install -g newman
+					  sudo npm install -g newman-reporter-htmlextra
+					  sudo npm install -g newman-reporter-junitfullreport
 						  """
 					}
 					catch (exc) {
