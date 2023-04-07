@@ -9,7 +9,22 @@
 			"name": "New Request",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://ec2-63-34-200-9.eu-west-1.compute.amazonaws.com:8080/",
+					"protocol": "http",
+					"host": [
+						"ec2-63-34-200-9",
+						"eu-west-1",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
 			},
 			"response": []
 		}
