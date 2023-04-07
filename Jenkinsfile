@@ -7,7 +7,7 @@ pipeline {
 					try {
 					  sh """
 					  sudo apt update
-					  sudo apt install nodejs npm
+					  sudo apt -y install nodejs npm
 					  npm install -g newman
 					  npm install -g newman-reporter-htmlextra
 					  npm install -g newman-reporter-junitfullreport
