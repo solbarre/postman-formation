@@ -27,5 +27,11 @@ pipeline {
 				"""
 			}
 		}
+		stage('publication des resultats au format html') {
+		    steps{
+				println "publication du rapport"
+				publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: true, reportDir: 'results', reportFiles: 'htmlextra.html', reportName: 'HTML Report', reportTitles: ''])
+			}
+		}
 	}
 }
