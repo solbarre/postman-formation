@@ -1,5 +1,5 @@
 pipeline {
-	agent(label 'slave_d1')
+	agent { label 'slave_d1'}
 	stages {
         stage('install newman') {
             try {
