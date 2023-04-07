@@ -19,9 +19,11 @@ pipeline {
 			}
         }
 		stage('lance test') {
-		   sh """
-		   newman run test-client.postman_collection.json -r cli,junitfullreport,htmlextra --reporter-junitfullreport-export 'result.xml' --reporter-htmlextra-export './results/htmlextra.html'
-			"""
+			steps{
+				sh """
+				newman run test-client.postman_collection.json -r cli,junitfullreport,htmlextra --reporter-junitfullreport-export 'result.xml' --reporter-htmlextra-export './results/htmlextra.html'
+				"""
+			}
 		}
 	}
 }
